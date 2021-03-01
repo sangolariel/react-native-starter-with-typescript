@@ -1,0 +1,51 @@
+{
+  "common": {
+    "text_update_title": "News updates",
+    "text_update_content": "System optimization, faster, more convenient",
+    "btn_update": "Update",
+    "text_unconnected_title": "No Internet Connection",
+    "text_unconnected_content": "Please check your internet connection and try again",
+    "btn_try_again": "Try again",
+    "text_show_all": "Show all",
+    "text_category": "Blogs",
+    "text_search_country_mobile": "Type Here...",
+    "btn_cancel": "Cancel",
+    "text_shopping_now": "Shopping now",
+    "text_go_home": "Go home",
+    "text_go_shopping": "Go Shopping"
+  },
+  "navigation": {
+    "cart": "Giỏ hàng"
+  },
+  "onBoardScreen": {
+    "btn_done": "Bắt đầu",
+    "btn_next": "Tiếp"
+  },
+  "auth": {
+    "text_sign_in": "Đăng nhập",
+    "text_sign_up": "Đăng kí",
+    "input_label_name": "Tên",
+    "input_label_email": "Email",
+    "input_label_password": "Mật khẩu",
+    "btn_sign_in": "Đăng nhập",
+    "btn_sign_up": "Đăng kí",
+    "text_forgot_password": "Quên mật khẩu?",
+    "text_have_acount": "Bạn đã có tài khoản?",
+    "text_sign_in_with_social_login": "Hoặc đăng nhập với"
+  },
+  "shopCategory": {
+    "text_search": "Tìm kiếm"
+  },
+  "empty": {
+    "text_title_category": "Không có danh mục nào",
+    "text_subtitle_category": "Liên hệ với admin để thêm danh mục",
+    "text_title_product": "Không có bất kỳ sản phẩm nào",
+    "text_subtitle_product": "Vui lòng nhập danh mục hoặc giá trị bộ lọc khác"
+  },
+  "product": {
+    "text_product_description": "Miêu tả",
+    "text_product_attribute_color": "Màu sắc",
+    "text_product_attribute_size": "Kích cỡ",
+    "text_product_attribute_weight": "Trọng lượng"
+  }
+}

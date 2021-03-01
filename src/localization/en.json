@@ -1,0 +1,51 @@
+{
+  "common": {
+    "text_update_title": "News updates",
+    "text_update_content": "System optimization, faster, more convenient",
+    "btn_update": "Update",
+    "text_unconnected_title": "No Internet Connection",
+    "text_unconnected_content": "Please check your internet connection and try again",
+    "btn_try_again": "Try again",
+    "text_show_all": "Show all",
+    "text_category": "Blogs",
+    "text_search_country_mobile": "Type Here...",
+    "btn_cancel": "Cancel",
+    "text_shopping_now": "Shopping now",
+    "text_go_home": "Go home",
+    "text_go_shopping": "Go Shopping"
+  },
+  "navigation": {
+    "cart": "Cart"
+  },
+  "onBoardScreen": {
+    "btn_done": "Start",
+    "btn_next": "Next"
+  },
+  "auth": {
+    "text_sign_in": "Sign in",
+    "text_sign_up": "Sign up",
+    "input_label_name": "Name",
+    "input_label_email": "Email",
+    "input_label_password": "Password",
+    "btn_sign_in": "Login",
+    "btn_sign_up": "Sign up",
+    "text_forgot_password": "Forgot your password?",
+    "text_have_acount": "Already have an account?",
+    "text_sign_in_with_social_login": "Or sign up with social account"
+  },
+  "shopCategory": {
+    "text_search": "Search"
+  },
+  "empty": {
+    "text_title_category": "No have any categories",
+    "text_subtitle_category": "Please contact with admin to add categories",
+    "text_title_product": "No have any products",
+    "text_subtitle_product": "Please come in other category or filter value"
+  },
+  "product": {
+    "text_product_description": "Description",
+    "text_product_attribute_color": "Color",
+    "text_product_attribute_size": "Size",
+    "text_product_attribute_weight": "Weight"
+  }
+}

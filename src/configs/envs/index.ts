@@ -3,7 +3,7 @@ import * as productionEnv from './production';
 
 const ENV = process.env.ENV || 'development';
 
-const env = {
+const env: any = {
   development: developmentEnv,
   production: productionEnv,
 };
