@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import {useEffect, useRef} from 'react';
 import {Animated} from 'react-native';
 
@@ -23,7 +24,7 @@ export const useAnimatedValue = (
     const _animate = setTimeout(() => _animated(), startDelay);
 
     return () => clearTimeout(_animate);
-  });
+  }, [_animated, startDelay]);
 
   return animatedValue;
 };

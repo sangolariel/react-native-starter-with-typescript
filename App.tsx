@@ -1,21 +1,33 @@
-import React from 'react';
-import {View, StyleSheet} from 'react-native';
-import {Home} from '~/theme/svg/bottomTab';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import React, {useEffect} from 'react';
+import {LogBox} from 'react-native';
 
-const App = () => {
+/*Store state Redux Saga */
+import {Provider} from 'react-redux';
+import {PersistGate} from 'redux-persist/integration/react';
+
+import storeInit from './src/store';
+const {store, persistor} = storeInit();
+
+/*Bootstrap setup */
+import Bootstrap from './src/bootstrap';
+
+/*Disable warning*/
+LogBox.ignoreAllLogs();
+
+export default () => {
+  /*Load store*/
+  useEffect(() => {
+    store.subscribe(() => {
+      const state = store.getState();
+    });
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Home />
-    </View>
+    <Provider store={store}>
+      <PersistGate loading={null} persistor={persistor}>
+        <Bootstrap />
+      </PersistGate>
+    </Provider>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-});
-
-export default App;

@@ -3,19 +3,19 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import createSagaMiddleware from 'redux-saga';
 import {persistStore, persistReducer} from 'redux-persist';
 import AsyncStorage from '@react-native-community/async-storage';
-import immutableTransform from 'redux-persist-transform-immutable';
+// import immutableTransform from 'redux-persist-transform-immutable';
 import rootReducer from './reducers';
 import rootSaga from './sagas';
 
 const persistConfig = {
   key: 'root',
-  transforms: [immutableTransform()],
+  // transforms: [immutableTransform()],
   storage: AsyncStorage,
-  whitelist: ['common'],
+  whitelist: ['common', 'language'],
 };
 
 const composeEnhancers: any =
-  process.env.NODE_ENV === 'development' ? composeWithDevTools() : compose;
+  process.env.ENV === 'development' ? composeWithDevTools() : compose;
 
 const sagaMiddleware = createSagaMiddleware();
 
