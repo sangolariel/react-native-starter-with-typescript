@@ -12,10 +12,14 @@
     "target": "esnext",
     "resolveJsonModule": true,
     "baseUrl": ".",
-     "paths": {
-       "~": ["src/*"],
-       "@tests": ["tests/*"],
-       "@interfaces": ["interfaces/*"],
+    "paths": {
+      "~/*": ["src/*"],
+      "@tests": ["tests/*"],
+      "@interfaces/*": ["interfaces/*"],
+      "@components": ["src/theme/components/*"],
+      "@containers/*": ["src/theme/containers/*"],
+      "@themeConfig/*": ["src/theme/configs/*"],
+      "@svg/*": ["src/theme/svg/*"],
      },
   },
   "exclude": [
