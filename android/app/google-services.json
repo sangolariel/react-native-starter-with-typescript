@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "366495683962",
+    "project_id": "bibleplans-8d687",
+    "storage_bucket": "bibleplans-8d687.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366495683962:android:e71a6cb4e941b0fa8ef2c3",
+        "android_client_info": {
+          "package_name": "com.bibleplans.staging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "366495683962-s02qc756gs1tdve9l448vtse295fmbeb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbrO_r0-Tesn5f-mz-qzmsRfxqhHSw2SQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "366495683962-s02qc756gs1tdve9l448vtse295fmbeb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "366495683962-3p9oaa7lqus2jfj4cjmq6s8p2ur8gei1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.bible.futurify.vn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
