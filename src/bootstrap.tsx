@@ -12,7 +12,6 @@ import NetInfo from '@react-native-community/netinfo';
 import {useSelector, useDispatch} from 'react-redux';
 import {languageSelector} from '~/store/language/selectors';
 import {fetchSetting} from '~/store/common/actions';
-// import {fetchCategories} from './Store/category/actions';
 
 /* FlashMessage */
 import FlashMessage from 'react-native-flash-message';
@@ -32,19 +31,6 @@ import {fontConfig} from '~/configs/fonts';
 
 /* Router @react-navigation v5 */
 import RootNavigator from '~/router';
-
-/* Firebase */
-// import firebase from '@react-native-firebase/app';
-// import {firebaseConfig} from '~/configs/firebase';
-
-// Initialize Firebase JS SDK
-// https://firebase.google.com/docs/web/setup
-// try {
-//   firebase.initializeApp(firebaseConfig);
-// } catch (err) {
-//   console.error('Firebase setup error: ' + err);
-//   // ignore app already initialized error in snack
-// }
 
 export default () => {
   /* Localization */
