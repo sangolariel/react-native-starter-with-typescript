@@ -1,1 +1,1 @@
-export {default as MainStack} from '~/screens/Home';
+export {default as MainStack} from '~/router/navigator/MainStack';
