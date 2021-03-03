@@ -1,4 +1,5 @@
 import React from 'react';
+import {useTheme} from 'react-native-paper';
 import {useTranslation} from 'react-i18next';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
@@ -13,10 +14,18 @@ import {IObject} from '~/interfaces/common';
 const Tab = createBottomTabNavigator();
 const BottomTabs = () => {
   const {i18n} = useTranslation();
+  const theme = useTheme();
+
   const lang: string = i18n.language;
   const backBehavior = 'initialRoute';
 
-  const {initialRouteName, activeColor, inactiveColor} = tabsSetting.configs;
+  const {initialRouteName} = tabsSetting.configs;
+
+  const tabbarColor = theme.dark
+    ? tabsSetting.configs.dark
+    : tabsSetting.configs.light;
+
+  const {activeColor, inactiveColor, tabBarBackground} = tabbarColor;
 
   const {tabsNavigator} = tabsSetting;
 
@@ -30,6 +39,9 @@ const BottomTabs = () => {
       tabBarOptions={{
         activeTintColor: activeColor,
         inactiveTintColor: inactiveColor,
+        style: {
+          backgroundColor: tabBarBackground,
+        },
       }}>
       {tabsNavigator.map((tab: IObject<any>, _i: number) => {
         const TabBarIcon = tabbarIcons[tab.option.tabBarIcon];

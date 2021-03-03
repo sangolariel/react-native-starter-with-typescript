@@ -60,9 +60,16 @@ export const navigationSetting = {
 export const tabsSetting = {
   configs: {
     initialRouteName: bottomTabs.home,
-    tabBarColor: 'white',
-    activeColor: '#368C8B',
-    inactiveColor: '#200E32',
+    light: {
+      tabBarBackground: 'white',
+      activeColor: '#368C8B',
+      inactiveColor: '#200E32',
+    },
+    dark: {
+      tabBarBackground: '#200E32',
+      activeColor: '#F7F7F7',
+      inactiveColor: '#a1a4b2',
+    },
   },
   tabsNavigator: [
     {
