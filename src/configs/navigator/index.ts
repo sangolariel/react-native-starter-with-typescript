@@ -66,7 +66,7 @@ export const tabsSetting = {
       inactiveColor: '#200E32',
     },
     dark: {
-      tabBarBackground: '#200E32',
+      tabBarBackground: '#252D42',
       activeColor: '#F7F7F7',
       inactiveColor: '#a1a4b2',
     },
