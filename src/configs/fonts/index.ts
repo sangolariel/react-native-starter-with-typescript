@@ -1,55 +1,57 @@
-export const fontConfig: any = {
+import {IObject} from '~/interfaces/common';
+
+export const fontConfig: IObject<any> = {
   web: {
     regular: {
-      fontFamily: 'sans-serif',
+      fontFamily: 'Lato-Regular',
       fontWeight: 'normal',
     },
     medium: {
-      fontFamily: 'sans-serif-medium',
+      fontFamily: 'Lato-Bold',
       fontWeight: 'normal',
     },
     light: {
-      fontFamily: 'sans-serif-light',
+      fontFamily: 'Lato-Light',
       fontWeight: 'normal',
     },
     thin: {
-      fontFamily: 'sans-serif-thin',
+      fontFamily: 'Lato-Thin',
       fontWeight: 'normal',
     },
   },
   ios: {
     regular: {
-      fontFamily: 'sans-serif',
+      fontFamily: 'Lato-Regular',
       fontWeight: 'normal',
     },
     medium: {
-      fontFamily: 'sans-serif-medium',
+      fontFamily: 'Lato-Bold',
       fontWeight: 'normal',
     },
     light: {
-      fontFamily: 'sans-serif-light',
+      fontFamily: 'Lato-Light',
       fontWeight: 'normal',
     },
     thin: {
-      fontFamily: 'sans-serif-thin',
+      fontFamily: 'Lato-Thin',
       fontWeight: 'normal',
     },
   },
   android: {
     regular: {
-      fontFamily: 'sans-serif',
+      fontFamily: 'Lato-Regular',
       fontWeight: 'normal',
     },
     medium: {
-      fontFamily: 'sans-serif-medium',
+      fontFamily: 'Lato-Bold',
       fontWeight: 'normal',
     },
     light: {
-      fontFamily: 'sans-serif-light',
+      fontFamily: 'Lato-Light',
       fontWeight: 'normal',
     },
     thin: {
-      fontFamily: 'sans-serif-thin',
+      fontFamily: 'Lato-Thin',
       fontWeight: 'normal',
     },
   },
