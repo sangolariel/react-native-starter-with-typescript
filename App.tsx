@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import 'react-native-gesture-handler';
 import React, {useEffect} from 'react';
 import {LogBox} from 'react-native';
 

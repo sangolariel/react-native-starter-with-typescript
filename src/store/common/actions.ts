@@ -10,13 +10,3 @@ export function fetchSetting() {
     type: Actions.FETCH_SETTING,
   };
 }
-
-/**
- * Close Getting Stated
- * @returns {{type: string}}
- */
-export function setOnBoardLoaded() {
-  return {
-    type: Actions.ON_BOARD_LOADED,
-  };
-}
