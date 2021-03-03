@@ -1,6 +1,4 @@
-/* eslint-disable no-shadow */
 import React from 'react';
-import {Platform} from 'react-native';
 import {useTranslation} from 'react-i18next';
 
 /*Theme*/
@@ -38,30 +36,6 @@ const StackNavigator = () => {
 
   const listScreens: IObject<any> = screens;
 
-  /*Setting header bar */
-  const getNavigationOptions = (
-    theme: IObject<any>,
-    headerStyleDefault: IObject<any>,
-  ) => {
-    const {
-      headerStyle,
-      headerTitleStyle,
-    } = headerStyleDefault.defaultNavigationOption;
-    return {
-      gesturesEnabled: false,
-      headerTitleAlign: 'center',
-      headerStyle: {
-        backgroundColor: theme.colors.headerStyle.backgroundColor,
-        ...headerStyle,
-      },
-      headerTintColor: theme.colors.headerStyle.headerTintColor,
-      headerTitleStyle: {
-        paddingTop: Platform.OS === 'android' ? 15 : 10,
-        ...headerTitleStyle,
-      },
-    };
-  };
-
   return (
     <NavigationContainer theme={navigationTheme} ref={containerRef}>
       <Stack.Navigator
@@ -77,16 +51,15 @@ const StackNavigator = () => {
               name={stack.router}
               component={listScreens[stack.screen]}
               options={{
-                animationEnabled:
-                  stack.options && !stack.options.animationEnabled
-                    ? stack.options.animationEnabled
-                    : true,
+                title: lang === 'en' ? stack.title.en : stack.title.vi,
                 headerShown:
                   stack.options && stack.options.headerShown
                     ? stack.options.headerShown
                     : false,
-                headerTitle: stack.title[lang],
-                ...getNavigationOptions(theme, navigationSetting),
+                animationEnabled:
+                  stack.options && !stack.options.animationEnabled
+                    ? stack.options.animationEnabled
+                    : true,
               }}
             />
           );
